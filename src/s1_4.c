@@ -129,7 +129,7 @@ int light_init(void)
 	return 0;
 
 fail_malloc:
-	unregister_chrdev_region(dev, light_devp);
+	unregister_chrdev_region(dev, 1);
 	return result;
 }
 
